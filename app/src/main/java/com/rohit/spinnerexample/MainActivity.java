@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Spinner element
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
 
         // Spinner click listener
@@ -32,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         categories.add("Education");
         categories.add("Personal");
         categories.add("Travel");
+        categories.add("Import and Export");
 
         // Creating adapter for spinner
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
